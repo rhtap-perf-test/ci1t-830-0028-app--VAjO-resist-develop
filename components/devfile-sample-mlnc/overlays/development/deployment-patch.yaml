@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-mlnc
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/stonesoup_perfscale/ci1t-830-0028-tenant/ci1t-830-0028-app/devfile-sample-mlnc@sha256:237dec940ae938ec0040fd14cb8121429a854a8445addb44a8c2cda0c40a365a
+        name: my-nodejs
+        resources: {}
+status: {}
